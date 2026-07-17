@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" role="img" aria-label="">
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#F2EFE6"/>
+      <stop offset="0.56" stop-color="#E9E4D8"/>
+      <stop offset="1" stop-color="#D5DDE3"/>
+    </linearGradient>
+    <linearGradient id="river" x1="0" x2="1">
+      <stop offset="0" stop-color="#0F243E" stop-opacity=".16"/>
+      <stop offset=".5" stop-color="#6B7D6C" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#0F243E" stop-opacity=".12"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="720" fill="url(#paper)"/>
+  <g opacity=".42" stroke="#C3B288" stroke-width="1">
+    <path d="M-80 20 360 720"/>
+    <path d="M170 0 610 720"/>
+    <path d="M420 0 860 720"/>
+    <path d="M670 0 1110 720"/>
+    <path d="M920 0 1360 720"/>
+    <path d="M1170 0 1610 720"/>
+  </g>
+  <g opacity=".28" stroke="#0F243E" stroke-width="1">
+    <path d="M0 150 C260 120 450 190 690 150 S1160 105 1600 145"/>
+    <path d="M0 312 C260 282 450 352 690 312 S1160 267 1600 307"/>
+    <path d="M0 474 C260 444 450 514 690 474 S1160 429 1600 469"/>
+  </g>
+  <path d="M0 562 C190 522 345 590 520 548 C706 503 855 574 1035 535 C1236 492 1390 548 1600 506 L1600 720 L0 720Z" fill="url(#river)"/>
+  <path d="M0 602 C230 555 366 621 560 581 C755 540 898 611 1090 574 C1302 533 1438 585 1600 552" fill="none" stroke="#0F243E" stroke-opacity=".34" stroke-width="3"/>
+  <g transform="translate(1220 190)" opacity=".82">
+    <circle r="104" fill="none" stroke="#C3B288" stroke-width="4"/>
+    <circle r="72" fill="none" stroke="#6B7D6C" stroke-width="2"/>
+    <path d="M0-112 16-20 0-34-16-20Z" fill="#0F243E"/>
+    <path d="M112 0 20 16 34 0 20-16Z" fill="#C3B288"/>
+    <path d="M0 112-16 20 0 34 16 20Z" fill="#6B7D6C"/>
+    <path d="M-112 0-20-16-34 0-20 16Z" fill="#C3B288"/>
+    <line x1="-128" y1="0" x2="128" y2="0" stroke="#0F243E" stroke-width="3"/>
+    <line x1="0" y1="-128" x2="0" y2="128" stroke="#0F243E" stroke-width="3"/>
+  </g>
+</svg>
+
