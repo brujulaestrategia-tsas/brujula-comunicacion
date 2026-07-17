@@ -167,6 +167,23 @@ h1 { color: var(--navy); font-size: clamp(5rem, 13vw, 12rem); letter-spacing: 0.
 .portrait::after { background: linear-gradient(135deg, transparent 44%, rgba(195, 178, 136, 0.34)); content: ""; inset: 0; position: absolute; }
 .person h3, .service h3, .north-item h3 { color: var(--navy); font-size: 1.8rem; margin-bottom: 10px; }
 .person p, .service p, .north-item p, .contact-copy p { color: var(--muted); margin-bottom: 0; }
+.person { overflow: hidden; transition: border-color 180ms ease, transform 180ms ease; }
+.person:hover { border-color: rgba(15, 36, 62, 0.34); transform: translateY(-3px); }
+.person-trigger { background: transparent; border: 0; color: inherit; cursor: pointer; display: block; font: inherit; padding: 0; text-align: left; width: 100%; }
+.person-trigger:focus-visible { outline: 2px solid var(--gold); outline-offset: 8px; }
+.person-more { align-items: center; color: var(--sage); display: flex; font-size: 0.72rem; font-weight: 700; gap: 9px; letter-spacing: 0.13em; margin-top: 22px; text-transform: uppercase; }
+.person-more span { font-size: 1rem; transition: transform 180ms ease; }
+.person-trigger:hover .person-more span { transform: translateX(4px); }
+.person-modal[hidden] { display: none; }
+.person-modal { align-items: center; display: flex; inset: 0; justify-content: center; padding: 24px; position: fixed; z-index: 1000; }
+.person-modal-backdrop { background: rgba(8, 20, 35, 0.76); inset: 0; position: absolute; }
+.person-dialog { background: var(--paper); border-top: 4px solid var(--gold); box-shadow: 0 24px 80px rgba(8, 20, 35, 0.34); max-width: 640px; padding: clamp(34px, 6vw, 64px); position: relative; width: 100%; z-index: 1; }
+.person-dialog h3 { color: var(--navy); font-size: clamp(2.5rem, 6vw, 4.6rem); margin: 8px 0 12px; }
+.person-modal-role { color: var(--sage); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; margin: 0 0 28px; text-transform: uppercase; }
+.person-modal-copy { color: var(--muted); font-size: clamp(1.02rem, 2vw, 1.2rem); line-height: 1.75; margin: 0; }
+.person-close { align-items: center; background: transparent; border: 1px solid var(--line); color: var(--navy); cursor: pointer; display: flex; font-size: 1.65rem; height: 42px; justify-content: center; line-height: 1; position: absolute; right: 18px; top: 18px; width: 42px; }
+.person-close:hover, .person-close:focus-visible { background: var(--navy); color: var(--paper); }
+body.has-person-modal { overflow: hidden; }
 
 .split { display: grid; gap: clamp(40px, 8vw, 96px); grid-template-columns: 1.1fr 0.9fr; }
 .principles { border-top: 1px solid var(--navy); padding-top: 26px; }
@@ -470,5 +487,6 @@ textarea { resize: vertical; }
   .future-service { padding: 26px 18px; }
   .future-meta { align-items: flex-start; gap: 16px; }
   .future-meta small { text-align: right; }
+  .person-modal { padding: 14px; }
+  .person-dialog { padding: 48px 24px 32px; }
 }
-
