@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-labelledby="title desc">
+  <title id="title">BRÚJULA</title>
+  <desc id="desc">Logo con rosa de los vientos, ondas y texto BRÚJULA.</desc>
+  <defs>
+    <style>
+      .navy{fill:#0f243e}.gold{fill:#c3b288}.sage{fill:#6b7d6c}.line{fill:none;stroke:#c3b288;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.thin{fill:none;stroke:#0f243e;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <g transform="translate(460 126)">
+    <circle r="88" fill="none" stroke="#c3b288" stroke-width="4"/>
+    <path d="M-70 48 C-38 31 35 31 70 48" fill="none" stroke="#6b7d6c" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-62 66 C-28 51 28 51 62 66" fill="none" stroke="#6b7d6c" stroke-width="6" stroke-linecap="round"/>
+    <path class="navy" d="M0-112 18-16 0-34-18-16Z"/>
+    <path class="gold" d="M112 0 16 18 34 0 16-18Z"/>
+    <path class="gold" d="M0 112-18 16 0 34 18 16Z"/>
+    <path class="navy" d="M-112 0-16-18-34 0-16 18Z"/>
+    <path class="gold" d="M0-54 17-17 54 0 17 17 0 54-17 17-54 0-17-17Z" opacity=".86"/>
+    <line class="thin" x1="-116" y1="0" x2="116" y2="0"/>
+    <line class="thin" x1="0" y1="-116" x2="0" y2="116"/>
+  </g>
+  <text x="460" y="334" text-anchor="middle" fill="#0f243e" font-family="DM Serif Display, Georgia, serif" font-size="104" font-weight="400" letter-spacing="34">BRÚJULA</text>
+  <line class="line" x1="390" y1="380" x2="530" y2="380"/>
+  <text x="460" y="430" text-anchor="middle" fill="#c3b288" font-family="Montserrat, Arial, sans-serif" font-size="19" font-weight="600" letter-spacing="10">COMUNICACIÓN QUE ORIENTA.</text>
+  <text x="460" y="466" text-anchor="middle" fill="#c3b288" font-family="Montserrat, Arial, sans-serif" font-size="19" font-weight="600" letter-spacing="10">CRECIMIENTO QUE TRASCIENDE.</text>
+</svg>
+
