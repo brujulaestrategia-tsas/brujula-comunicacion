@@ -88,6 +88,51 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closePersonModal();
 });
 
+const northTabs = document.querySelectorAll("[data-north-tab]");
+const northPanels = document.querySelectorAll("[data-north-panel]");
+
+northTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = tab.dataset.northTab;
+    northTabs.forEach((item) => {
+      const isActive = item === tab;
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-selected", String(isActive));
+    });
+    northPanels.forEach((panel) => {
+      panel.hidden = panel.dataset.northPanel !== target;
+    });
+  });
+});
+
+const serviceTabs = document.querySelectorAll("[data-service-tab]");
+const servicePanels = document.querySelectorAll("[data-service-panel]");
+
+serviceTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = tab.dataset.serviceTab;
+    serviceTabs.forEach((item) => {
+      const isActive = item === tab;
+      item.classList.toggle("is-active", isActive);
+      item.setAttribute("aria-selected", String(isActive));
+    });
+    servicePanels.forEach((panel) => {
+      panel.hidden = panel.dataset.servicePanel !== target;
+    });
+  });
+});
+
+const audienceCards = document.querySelectorAll(".audience-card");
+
+audienceCards.forEach((card) => {
+  card.addEventListener("toggle", () => {
+    if (!card.open) return;
+    audienceCards.forEach((otherCard) => {
+      if (otherCard !== card) otherCard.open = false;
+    });
+  });
+});
+
 
 const proposalLinks = document.querySelectorAll("[data-proposal]");
 const messageField = document.querySelector('textarea[name="mensaje"]');
